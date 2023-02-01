@@ -2,14 +2,18 @@ package com.cc.java;
 
 public class Konto {
     
-    public Konto(int kontostand2) {
+    
+    private int kontostand = 10000;
+
+    public int get()
+    {
+        return kontostand;
     }
 
-    public static int kontostand = 10000;
+    public void set(int multiplizieren)
+    {
+        kontostand = multiplizieren;
+    }
 
-    Konto konto1 = new Konto(kontostand);
-
-    Konto konto2 = new Konto(kontostand);
-
-    Konto konto3 = new Konto(kontostand);
+    
 }
